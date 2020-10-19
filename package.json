@@ -1,0 +1,39 @@
+{
+  "name": "reactminichallenge",
+  "version": "1.0.0",
+  "description": "React mini challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --mode development",
+    "server": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlblom/ReactMiniChallenge.git"
+  },
+  "author": "Danielle Blom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dlblom/ReactMiniChallenge/issues"
+  },
+  "homepage": "https://github.com/dlblom/ReactMiniChallenge#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^5.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
