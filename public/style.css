@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.factsList {
+  margin: 5px;
+  display: grid;
+}
+
+.factCard {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  padding: 2px 16px;
+  width: 1000px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(13, 99, 212);
+  margin: 10px 10px;
+}
+
+.factCard:hover {
+  background-color: rgb(13, 212, 152);
+}
+
+img {
+  border: 5px solid rgb(5, 5, 5);
+}
