@@ -1,11 +1,34 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { App } from "../src/App.jsx";
+import App from "../src/App.jsx";
+import FactsList from "../src/FactsList.jsx";
+import { shallow } from "enzyme";
+import { configure } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
 
-test("renders the correct content", () => {
-  // render a React component to the DOM
-  const root = document.createElement("div");
-  ReactDOM.render(<App />, root);
+configure({ adapter: new Adapter() });
 
-  expect(app.querySelector("h1").textContent).toBe("Hello World!");
+describe("App", () => {
+  let appWrapper;
+
+  beforeAll(() => {
+    appWrapper = shallow(<App />);
+  });
+
+  it("renders a facts list", () => {
+    const factsList = appWrapper.find(FactsList);
+
+    expect(factsList).toHaveLength(1);
+  });
+
+  it("is a class component which holds state", () => {
+    const appState = appWrapper.state();
+
+    expect(appState.facts).toBeDefined();
+  });
+
+  it("passes facts property of state to factsList as prop", () => {
+    const factsList = appWrapper.find(FactsList);
+
+    expect(factsList.props().facts).toEqual(appWrapper.state().facts);
+  });
 });
