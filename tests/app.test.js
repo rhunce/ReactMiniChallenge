@@ -8,11 +8,7 @@ import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
 
 describe("App", () => {
-  let appWrapper;
-
-  beforeAll(() => {
-    appWrapper = shallow(<App />);
-  });
+  let appWrapper = shallow(<App />);
 
   it("renders a facts list", () => {
     const factsList = appWrapper.find(FactsList);
