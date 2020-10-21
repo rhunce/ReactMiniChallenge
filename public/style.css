@@ -4,17 +4,22 @@
 }
 
 .factsList {
-  margin: 5px;
+  margin: 0 auto;
+  max-width: 70%;
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
 }
 
 .factCard {
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
   padding: 2px 16px;
-  width: 1000px;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: rgb(13, 99, 212);
+  background-color: rgb(94, 161, 248);
   margin: 10px 10px;
 }
 
@@ -23,5 +28,9 @@
 }
 
 img {
-  border: 5px solid rgb(5, 5, 5);
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  border: 3px solid rgb(66, 66, 66);
 }
