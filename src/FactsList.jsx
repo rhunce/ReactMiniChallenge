@@ -1,12 +1,7 @@
-import React from "react";
-import Fact from "./Fact.jsx";
+// TO DO: Create a FactsList functional component which maps through all of the animal facts in data.jsx and returns each item as a Fact component
 
-const FactsList = ({ facts }) => (
-  <div className="factsList">
-    {facts.map((item) => (
-      <Fact fact={item} key={item.id} />
-    ))}
-  </div>
-);
+// Use the div below to maintain existing css styling
 
-export default FactsList;
+{
+  /* <div className="factsList"></div> */
+}

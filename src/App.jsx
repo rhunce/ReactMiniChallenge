@@ -1,22 +1,9 @@
-import React from "react";
-import animalFacts from "./data.jsx";
-import FactsList from "./FactsList.jsx";
+// TO DO: Create an App class component which renders FactsList
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
+// Use the div provided below to maintain existing CSS styling
 
-    this.state = {
-      facts: animalFacts,
-    };
-  }
-  render() {
-    return (
-      <div className="main">
-        <FactsList facts={this.state.facts} />
-      </div>
-    );
-  }
+{
+  /* <div className="main">
+  <FactsList />
+</div> */
 }
-
-export default App;
