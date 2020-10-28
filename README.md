@@ -1,6 +1,10 @@
 # ReactMiniChallenge
 
-Use this repo to practice React. Delete all the code from the React copmonent files except for the div tags and their classNames (to maintain the CSS styling). Now, rebuild the components from scratch to complete an app which displays random animal facts.
+Practice React by building an app that displays random animal facts, fill in the code for the following files:
+- index.jsx
+- App.jsx
+- FactsList.jsx
+- Fact.jsx
 
 ## Demo
 ![Oct-27-2020 21-03-04](https://user-images.githubusercontent.com/65248215/97378078-da81cc80-1897-11eb-9625-6465f541d16b.gif)
@@ -9,7 +13,7 @@ Use this repo to practice React. Delete all the code from the React copmonent fi
 
 To get started:
 
-Navigate to the project Directory
+Clone this repo and navigate to the project directory
 
 ```sh
 $ cd ReactMiniChallenge
