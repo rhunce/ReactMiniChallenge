@@ -3,6 +3,7 @@
 Use this repo to practice React. Delete all the code from the React copmonent files except for the div tags and their classNames (to maintain the CSS styling). Now, rebuild the components from scratch to complete an app which displays random animal facts.
 
 ## Demo
+![Oct-27-2020 21-03-04](https://user-images.githubusercontent.com/65248215/97378078-da81cc80-1897-11eb-9625-6465f541d16b.gif)
 
 ### Installation
 
