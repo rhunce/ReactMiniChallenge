@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import animalFacts from "./data.jsx";
 import FactsList from "./FactsList.jsx";
 

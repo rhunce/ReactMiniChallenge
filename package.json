@@ -4,6 +4,7 @@
   "description": "React mini challenge",
   "main": "index.js",
   "scripts": {
+    "dev-server": "webpack-dev-server --open",
     "start": "webpack --mode development",
     "server": "nodemon server/server.js",
     "test": "jest"
@@ -33,7 +34,8 @@
     "nodemon": "^2.0.4",
     "style-loader": "^2.0.0",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "path": "^0.12.7",

@@ -8,6 +8,11 @@ module.exports = {
     path: path.join(__dirname, "public"),
   },
   watch: true,
+  devServer: {
+    contentBase: path.join(__dirname, "./public"),
+    compress: true,
+    port: 9000,
+  },
   module: {
     rules: [
       {
