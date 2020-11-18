@@ -1,6 +1,4 @@
-# ReactMiniChallenge
-
-Practice React by building an app that displays random animal facts. The goal is to complete the app without referencing any of your old code. If you get stuck, try referencing the <a href="https://reactjs.org/docs/getting-started.html">React Documentation</a>. Fill in the following files to complete the app:
+Fill in the the incomplete files to complete a React app that displays random animal facts. Follow the errors in your browser, and make the tests pass complete this app. You'll be working in the following files:
 
 - App.jsx
 - FactsList.jsx
@@ -12,7 +10,9 @@ Practice React by building an app that displays random animal facts. The goal is
 
 ### Installation
 
-Clone this repo to your local computer and navigate to the root folder
+To get started:
+
+Navigate to the project Directory
 
 ```sh
 $ cd ReactMiniChallenge
@@ -30,6 +30,12 @@ Start the dev server
 $ npm run dev-server
 ```
 
+Check if tests are passing
+
+```sh
+$ npm run test
+```
+
 ### Technologies
 
 <table style="width:50%">
@@ -40,3 +46,4 @@ $ npm run dev-server
       <td><a href="https://babeljs.io/">Babel</a></td>
   </tr>
 </table>
+
