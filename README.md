@@ -1,13 +1,13 @@
 # ReactMiniChallenge
 
 Practice React by building an app that displays random animal facts. The goal is to complete the app without referencing any of your old code. If you get stuck, try referencing the <a href="https://reactjs.org/docs/getting-started.html">React Documentation</a>. Fill in the following files to complete the app:
-- index.jsx
+
 - App.jsx
 - FactsList.jsx
 - Fact.jsx
 
-
 ## Demo
+
 ![Oct-27-2020 21-03-04](https://user-images.githubusercontent.com/65248215/97378078-da81cc80-1897-11eb-9625-6465f541d16b.gif)
 
 ### Installation

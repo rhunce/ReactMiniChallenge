@@ -16,7 +16,7 @@ describe("App", () => {
     expect(factsList).toHaveLength(1);
   });
 
-  it("is a class component which holds state", () => {
+  it("is a class component which holds state: 'facts'", () => {
     const appState = appWrapper.state();
 
     expect(appState.facts).toBeDefined();
@@ -26,5 +26,9 @@ describe("App", () => {
     const factsList = appWrapper.find(FactsList);
 
     expect(factsList.props().facts).toEqual(appWrapper.state().facts);
+  });
+
+  it("should render 12 img tags", () => {
+    expect(appWrapper.find("img").length).toBe(12);
   });
 });
