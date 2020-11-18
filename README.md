@@ -1,6 +1,9 @@
 # ReactMiniChallenge
 
-Use this repo to practice React. Delete all the code from the React copmonent files except for the div tags and their classNames (to maintain the CSS styling). Now, rebuild the components from scratch to complete an app which displays random animal facts.
+Fill in the the incomplete files to complete a React app that displays random animal facts. Follow the errors in your browser, and make the tests pass complete this app. You'll be working in the following files:
+--App.jsx
+--FactsList.jsx
+--Fact.jsx
 
 ## Demo
 
@@ -24,6 +27,12 @@ Start the dev server
 
 ```sh
 $ npm run dev-server
+```
+
+Check if tests are passing
+
+```sh
+$ npm run test
 ```
 
 ### Technologies

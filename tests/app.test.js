@@ -10,28 +10,23 @@ import Adapter from "enzyme-adapter-react-16";
 configure({ adapter: new Adapter() });
 
 describe("App", () => {
-  let app = shallow(<App />);
+  let appWrapper = shallow(<App />);
 
-  it("should render", () => {
-    expect(app).toMatchSnapshot();
+  it("renders a facts list", () => {
+    const factsList = appWrapper.find(FactsList);
+
+    expect(factsList).toHaveLength(1);
   });
 
-  it("should be a class component which holds state", () => {
-    const appState = app.state();
-    expect(appState).toBeDefined();
+  it("is a class component which holds state: 'facts'", () => {
+    const appState = appWrapper.state();
+
+    expect(appState.facts).toBeDefined();
   });
 
-  it("should render FactsList and pass animalFacts as 'facts' through props", () => {
-    const factsList = shallow(<FactsList facts={animalFacts} />);
-    expect(factsList).toMatchSnapshot();
-  });
-});
+  it("passes facts to factsList through props", () => {
+    const factsList = appWrapper.find(FactsList);
 
-describe("FactsList", () => {
-  it("should render Fact with a unique key and pass a single animal fact as 'fact' through props", () => {
-    const fact = shallow(
-      <Fact fact={animalFacts[0]} key={animalFacts[0].id} />
-    );
-    expect(fact).toMatchSnapshot();
+    expect(factsList.props().facts).toEqual(appWrapper.state().facts);
   });
 });
