@@ -1,9 +1,10 @@
 # ReactMiniChallenge
 
 Fill in the the incomplete files to complete a React app that displays random animal facts. Follow the errors in your browser, and make the tests pass complete this app. You'll be working in the following files:
---App.jsx
---FactsList.jsx
---Fact.jsx
+
+- App.jsx
+- FactsList.jsx
+- Fact.jsx
 
 ## Demo
 
