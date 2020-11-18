@@ -1,6 +1,8 @@
 import React from "react";
 import App from "../src/App.jsx";
 import FactsList from "../src/FactsList.jsx";
+import Fact from "../src/Fact.jsx";
+import animalFacts from "../src/data.jsx";
 import { shallow } from "enzyme";
 import { configure } from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
@@ -22,13 +24,9 @@ describe("App", () => {
     expect(appState.facts).toBeDefined();
   });
 
-  it("passes facts property of state to factsList as prop", () => {
+  it("passes facts to factsList through props", () => {
     const factsList = appWrapper.find(FactsList);
 
     expect(factsList.props().facts).toEqual(appWrapper.state().facts);
-  });
-
-  it("should render 12 img tags", () => {
-    expect(appWrapper.find("img").length).toBe(12);
   });
 });
