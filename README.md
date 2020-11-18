@@ -8,6 +8,8 @@ Fill in the the incomplete files to complete a React app that displays random an
 
 ## Demo
 
+![Oct-27-2020 21-03-04](https://user-images.githubusercontent.com/65248215/97378078-da81cc80-1897-11eb-9625-6465f541d16b.gif)
+
 ### Installation
 
 To get started:
