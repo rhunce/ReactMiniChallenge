@@ -40,13 +40,3 @@ describe("FactsList", () => {
     expect(fact).toHaveLength(12);
   });
 });
-
-describe("Fact button", () => {
-  it("should call handleCard Click when button is clicked", () => {
-    const mockCallBack = jest.fn();
-
-    const button = shallow(<button onClick={mockCallBack}></button>);
-    button.find("button").simulate("click");
-    expect(mockCallBack).toHaveBeenCalled();
-  });
-});
