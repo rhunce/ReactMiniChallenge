@@ -11,10 +11,10 @@ class App extends React.Component {
       buttonClicked: false,
     };
 
-    this.handleCardClick = this.handleCardClick.bind(this);
+    this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
-  handleCardClick(e) {
+  handleButtonClick(e) {
     let currentState = this.state.buttonClicked;
     this.setState({
       buttonClicked: !currentState,
@@ -32,7 +32,7 @@ class App extends React.Component {
       <div className="main">
         <FactsList
           facts={this.state.facts}
-          handleCardClick={this.handleCardClick}
+          handleButtonClick={this.handleButtonClick}
         />
       </div>
     );
