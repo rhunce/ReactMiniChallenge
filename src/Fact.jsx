@@ -7,6 +7,8 @@ const Fact = () => {
   return (
     <div className="factCard">
       <h1>{"TO DO: Add animal name from data"}</h1>
+      {/* TODO: Attach a click event to the button */}
+      <button>{"Click to Favorite"}</button>
       <img src={"TO DO: Add image link from data"} width="600" height="400" />
       <h3>{"TO DO: Add animal fact from data"}</h3>
     </div>
