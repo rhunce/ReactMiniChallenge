@@ -40,19 +40,3 @@ describe("FactsList", () => {
     expect(fact).toHaveLength(12);
   });
 });
-
-describe("Fact", () => {
-  it("recieve an animal fact through props", () => {
-    const animal = {
-      id: 1,
-      animal: "Sea Otter",
-      fact:
-        "Sea Otters hold hands while they're sleeping so they don't drift apart.",
-      image: "https://jooinn.com/images/otter-11.jpg",
-    };
-
-    let factWrapper = shallow(<Fact fact={animal} />);
-
-    expect(factWrapper.props().children).toBeDefined();
-  });
-});
