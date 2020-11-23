@@ -12,7 +12,7 @@ configure({ adapter: new Adapter() });
 describe("FactsList", () => {
   let factsListWrapper = shallow(<FactsList facts={animalFacts} />);
 
-  it("renders 12 facts", () => {
+  it("renders 12 animal facts", () => {
     const fact = factsListWrapper.find(Fact);
 
     expect(fact).toHaveLength(12);
