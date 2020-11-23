@@ -43,7 +43,7 @@ describe("FactsList", () => {
 
 describe("Fact", () => {
   it("recieves access to a animal, fact and image through props", () => {
-    const props = {
+    const animal = {
       id: 1,
       animal: "Sea Otter",
       fact:
@@ -51,14 +51,10 @@ describe("Fact", () => {
       image: "https://jooinn.com/images/otter-11.jpg",
     };
 
-    let FactComponenet = mount(<Fact {...props} />);
+    let factWrapper = shallow(<Fact fact={animal} />);
 
-    expect(FactComponenet.prop("animal")).toBe("Sea Otter");
-    expect(FactComponenet.prop("image")).toBe(
-      "https://jooinn.com/images/otter-11.jpg"
-    );
-    expect(FactComponenet.prop("fact")).toBe(
-      "Sea Otters hold hands while they're sleeping so they don't drift apart."
-    );
+    console.log(factWrapper.props().children);
+
+    expect(factWrapper.props().children).toBeDefined();
   });
 });
