@@ -7,7 +7,7 @@
     "dev-server": "webpack-dev-server --open",
     "start": "webpack --mode development",
     "server": "nodemon server/server.js",
-    "test": "jest --verbose"
+    "test": "jest --watchAll"
   },
   "repository": {
     "type": "git",
