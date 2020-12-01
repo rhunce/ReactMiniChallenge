@@ -46,5 +46,7 @@ $ npm run test
     <td><a href="http://expressjs.com">Express</a></td>
      <td><a href="https://webpack.js.org/">Webpack</a></td>
       <td><a href="https://babeljs.io/">Babel</a></td>
+    <td><a href="https://jestjs.io/">Jest</a></td>
+    <td><a href="https://enzymejs.github.io/enzyme/docs/api/">Enzyme</a></td>
   </tr>
 </table>
