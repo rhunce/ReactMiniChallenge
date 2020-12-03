@@ -4,9 +4,7 @@ const Fact = ({ fact, handleButtonClick }) => {
   return (
     <div className="factCard">
       <h1>{fact.animal}</h1>
-      <button onClick={(e) => handleButtonClick(e)}>
-        {"Click to Favorite"}
-      </button>
+      <button onClick={(e) => handleButtonClick(e)}>Not Clicked</button>
       <img src={fact.image} width="600" height="400" />
       <h3>{fact.fact}</h3>
     </div>
