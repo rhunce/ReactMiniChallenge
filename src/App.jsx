@@ -7,18 +7,12 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      buttonClicked: false,
-    };
+    this.state = {};
   }
 
-  handleButtonClick(e) {
-    // when the favorite button is clicked
-    // update the text of the button from "Click to Favorite" to "Favorited"
-    // change the button background color from "yellow" to "pink"
-    // Hint: use e.target.style.background to change the background color
-    // Hint: use e.target.innerHTML to update the button text
-  }
+  // TODO: when a button in a Fact component is clicked, the button text should change from "Not Clicked" to "Clicked"
+  // Hint: use e.target.innerHTML to access the button text
+  handleButtonClick(e) {}
 
   render() {
     return (
