@@ -1,22 +1,26 @@
 import React from "react";
 // TO DO: Create an App class component which renders FactsList
 
-// Use the div provided below to maintain existing CSS styling
-
+// Before jumping into coding, check out the README for some reccomendations on the order to complete the challenge in and helpful hints
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
-    this.state = {};
+    this.state = {
+      facts: "",
+      favorite: "",
+    };
   }
 
-  // TODO: when a button in a Fact component is clicked, the button text should change from "Not Clicked" to "Clicked"
-  // Hint: use e.target.innerHTML to access the button text
-  handleButtonClick(e) {}
+  // TODO: when the favorite button is clicked in a Fact component, the state should get updated with the name of the animal that was favorited
+  handleFavoriteClick(e) {}
 
+  // NOTE: In order to maintain CSS styling, do not alter the existing tags or their classNames
   render() {
     return (
       <div className="main">
+        <h1 className="heading">Welcome to Animal Facts!</h1>
+        <h2 className="fave">My Favorite Animal: {TODO: when the favorite button is clicked, the name of the animal should appear here}</h2>
         <FactsList />
       </div>
     );
