@@ -1,10 +1,12 @@
 import React from "react";
 
-const Fact = ({ fact, handleButtonClick }) => {
+const Fact = ({ fact, handleFavoriteClick }) => {
   return (
     <div className="factCard">
       <h1>{fact.animal}</h1>
-      <button onClick={(e) => handleButtonClick(e)}>Not Clicked</button>
+      <button value={fact.animal} onClick={(e) => handleFavoriteClick(e)}>
+        Click to favorite
+      </button>
       <img src={fact.image} width="600" height="400" />
       <h3>{fact.fact}</h3>
     </div>

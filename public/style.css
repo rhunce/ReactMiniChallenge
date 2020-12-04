@@ -3,18 +3,35 @@ body {
 }
 
 .main {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  justify-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heading {
+  font-size: 50px;
+  font-weight: 900;
+  color: rgb(94, 161, 248);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.fave {
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(199, 133, 12);
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
 }
 
 .factsList {
-  max-width: 70%;
+  max-width: 80%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-auto-rows: auto;
-  gap: 20px;
+  gap: 30px;
   font-family: sans-serif;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .factCard {
@@ -41,6 +58,7 @@ img {
 button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: large;
+  font-weight: bold;
   padding: 5px 15px;
   background-color: yellow;
 }

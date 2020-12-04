@@ -3,26 +3,32 @@ import animalFacts from "./data.jsx";
 import FactsList from "./FactsList.jsx";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       facts: animalFacts,
+      favorite: "",
     };
 
-    this.handleButtonClick = this.handleButtonClick.bind(this);
+    this.handleFavoriteClick = this.handleFavoriteClick.bind(this);
   }
 
-  handleButtonClick(e) {
-    e.target.innerHTML = "Clicked";
+  handleFavoriteClick(e) {
+    // console.log(e.target.value);
+    this.setState({
+      favorite: e.target.value,
+    });
   }
 
   render() {
     return (
       <div className="main">
+        <h1 className="heading">Welcome to Animal Facts!</h1>
+        <h2 className="fave">My Favorite Animal: {this.state.favorite}</h2>
         <FactsList
           facts={this.state.facts}
-          handleButtonClick={this.handleButtonClick}
+          handleFavoriteClick={this.handleFavoriteClick}
         />
       </div>
     );
