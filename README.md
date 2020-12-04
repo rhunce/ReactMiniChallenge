@@ -12,10 +12,14 @@ Fill in the the incomplete files to complete a React app that displays random an
 | ----- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1     | Create a class component, App, in the App.jsx file which holds the animal facts (from data.jsx file) in state                                                   |
 | 2     | Pass the animal facts down from the App component to the FactsList component                                                                                    |
+| TIP   | Use chrome dev tools for React to check the values of state and props in each component as you work through this challenge...or console.log to check            |
 | 3     | In FactsList.jsx, dynamically render the data HINT: use the map method to render each item in the data array to a Fact component                                |
 | 4     | Fill in the Fact component with the data that's been passed down through props. Consider what data type a single item from the animalFacts array in data.jsx is |
-| 5     | Create an event handler function in App.js to handle ...                                                                                                        |
-| 6     | deletes a pet record based on req.params.id                                                                                                                     |
+| 5     | Create an event handler function called handleFavoriteClick in App.jsx which updates the state of favorite with the name of the animal that is favorited        |
+| TIP   | Start by just adding a console.log statemet like console.log(Clicked!) in the handleFavoriteClick function to see if you can get the function to fire           |
+| 6     | Pass the handleFavoriteClick method down from the App component to the Fact component                                                                           |
+| 7     | Connect handleFavoriteClick to an onClick event attached to the button in Fact.jsx. HINT: add a value property to the button and set equal to the animal name   |
+| TIP   | You can console.log(e.target.value) in the handleFavoriteClick function to check if you've set the correct value for the Favorite button onClick event          |
 
 ## Demo
 
