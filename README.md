@@ -25,7 +25,7 @@ It is reccomended to complete the requirements in an order similar to the outlin
 
 ## Demo
 
-![Nov-23-2020 15-49-59](https://user-images.githubusercontent.com/65248215/100019400-95bc5900-2da3-11eb-8865-06eb6d03da94.gif)
+![Dec-03-2020 22-51-20](https://user-images.githubusercontent.com/65248215/101123300-2a9c2f00-35ba-11eb-9ef6-c2b750a43f78.gif)
 
 ### Installation
 
