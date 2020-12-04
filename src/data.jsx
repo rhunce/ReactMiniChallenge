@@ -1,10 +1,10 @@
 const animalFacts = [
   {
     id: 1,
-    animal: "Sea Otter",
-    fact:
-      "Sea Otters hold hands while they're sleeping so they don't drift apart.",
-    image: "https://jooinn.com/images/otter-11.jpg",
+    animal: "Elephant",
+    fact: "Baby Elephants suck their trunks for comfort.",
+    image:
+      "https://cdn.pixabay.com/photo/2014/03/02/20/23/baby-elephant-278522_960_720.jpg",
   },
   {
     id: 2,
@@ -30,7 +30,6 @@ const animalFacts = [
     image:
       "https://alchetron.com/cdn/chevrotain-0ce09db4-e2a2-4e9d-b77f-4e04ba33209-resize-750.jpg",
   },
-
   {
     id: 5,
     animal: "Peacock",
@@ -40,10 +39,10 @@ const animalFacts = [
   },
   {
     id: 6,
-    animal: "Elephants",
-    fact: "Baby Elephants such their trunks for comfort.",
-    image:
-      "https://cdn.pixabay.com/photo/2014/03/02/20/23/baby-elephant-278522_960_720.jpg",
+    animal: "Sea Otter",
+    fact:
+      "Sea Otters hold hands while they're sleeping so they don't drift apart.",
+    image: "https://jooinn.com/images/otter-11.jpg",
   },
   {
     id: 7,
