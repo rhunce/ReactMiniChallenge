@@ -20,7 +20,7 @@ class App extends React.Component {
     return (
       <div className="main">
         <h1 className="heading">Welcome to Animal Facts!</h1>
-        <h2 className="fave">My Favorite Animal: {TODO: when the favorite button is clicked, the name of the animal should appear here}</h2>
+        <h2 className="fave">My Favorite Animal: {}</h2>
         <FactsList />
       </div>
     );
