@@ -3,8 +3,8 @@ import React from "react";
 
 // Before jumping into coding, check out the README for some reccomendations on the order to complete the challenge in and helpful hints
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       facts: "",
