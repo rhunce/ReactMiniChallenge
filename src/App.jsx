@@ -3,8 +3,8 @@ import animalFacts from "./data.jsx";
 import FactsList from "./FactsList.jsx";
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       facts: animalFacts,
